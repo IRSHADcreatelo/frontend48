@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Story Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gradient-to-r from-purple-600 to-blue-600 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Create Your Brand Story</h1>
+        <form id="story-form" class="space-y-4">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Company Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div>
+                <label for="website" class="block text-sm font-medium text-gray-700">Website URL</label>
+                <input type="url" id="website" name="website" required class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div>
+                <label for="tagline" class="block text-sm font-medium text-gray-700">Tagline</label>
+                <input type="text" id="tagline" name="tagline" required class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700">Generate Story</button>
+        </form>
+        <div id="loading" class="hidden text-center mt-4">
+            <div class="loader"></div>
+            <p class="text-gray-600">Generating your brand story...</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
