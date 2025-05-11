@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                const response = await fetch('https://your-backend.onrender.com/api/generate-story', {  // Replace with actual Render URL
+                const response = await fetch('https://backend48hours.onrender.com/api/generate-story', {  // Replace with actual Render URL
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
